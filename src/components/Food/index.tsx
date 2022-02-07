@@ -9,6 +9,15 @@ export default function Food({ food }){
 const { available } = food;
 const [ isAvailable, setIsAvailable ] = useState(available)
 
+const toggleAvailable = async () => {
+  await api.put(`/foods/${food.id}`, {
+    ...food,
+    available: !isAvailable,
+  });
+
+  setIsAvailable({ !isAvailable });
+}
+
   return (
 
   )
@@ -18,17 +27,7 @@ const [ isAvailable, setIsAvailable ] = useState(available)
 class Food extends Component {
 
 
-  toggleAvailable = async () => {
-    const { food } = this.props;
-    const { isAvailable } = this.state;
 
-    await api.put(`/foods/${food.id}`, {
-      ...food,
-      available: !isAvailable,
-    });
-
-    this.setState({ isAvailable: !isAvailable });
-  }
 
   setEditingFood = () => {
     const { food, handleEditFood } = this.props;
