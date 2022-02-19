@@ -21,15 +21,15 @@
       "name": "A la Camarón",
       "description": "Macarrão com vegetais de primeira linha e camarão dos 7 mares.",
       "price": "25.90",
-      "available": true,
+      "available": false,
       "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food3.png"
     },
     {
-      "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food2.png",
-      "name": "Ao Molho Italiano",
-      "price": "29.90",
-      "description": "Spagueti ao molho do chef italiano",
-      "available": true,
+      "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food3.png",
+      "name": "A La Sucon 2.0",
+      "price": "69.99",
+      "description": "La suco mais bueno",
+      "available": false,
       "id": 4
     }
   ]
